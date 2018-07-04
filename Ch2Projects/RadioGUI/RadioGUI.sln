@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioGUI", "RadioGUI\RadioGUI.csproj", "{DC672CB5-C534-4BB9-85DF-A3CEA1064268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC672CB5-C534-4BB9-85DF-A3CEA1064268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC672CB5-C534-4BB9-85DF-A3CEA1064268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC672CB5-C534-4BB9-85DF-A3CEA1064268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC672CB5-C534-4BB9-85DF-A3CEA1064268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B917EABB-2C27-4AA1-8C24-AA9BA4D14698}
+	EndGlobalSection
+EndGlobal
