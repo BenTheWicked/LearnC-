@@ -18,17 +18,9 @@ namespace TemperatureConversion
             while (!input.Equals("q"))
             {
                 double temp = Convert.ToDouble(input);
-                if (temp == 32)
-                {
-                    Console.WriteLine("32 degrees Fahrenheit is " +
-                        "0 degrees Celcius.\n");
-                }
-                else
-                {
-                    double celcius = 5.0 / 9.0 * (temp - 32);
-                    Console.WriteLine("{0:F} degrees Fahrenheit is {1:F} " +
-                        "degrees Celcius.\n", input, celcius);
-                }
+                double celcius = (5.0 / 9.0) * (temp - 32);
+                Console.WriteLine("{0:F} degrees Fahrenheit is {1:F} " +
+                    "degrees Celcius.\n", input, celcius);
                 
                 Console.Write("What Fahrenheit temperature would you " +
                     "like to convert? (q to quit) ");

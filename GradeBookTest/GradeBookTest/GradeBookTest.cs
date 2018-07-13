@@ -1,5 +1,5 @@
 ﻿// GradeBookTest.cs
-// Create GradeBook object and invoke its DetermineClassAverage method.
+// Create GradeBook object, input grades, and display grade report.
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +17,10 @@ namespace GradeBookTest
             GradeBook myGradeBook = new GradeBook(
                 "CS101 Introduction to C# Programming");
 
-            myGradeBook.DisplayMessage();   // display welcome message
-            myGradeBook.DetermineClassAverage();    // find average of 10 grades
-            Console.ReadLine();
+            myGradeBook.DisplayMessage();       // display welcome message
+            myGradeBook.InputGrades();          // read grades from user
+            myGradeBook.DisplayGradeReport();   // display report based on grades
+            Console.ReadKey();
         }   // end Main
     }   // end class GradeBookTest
 }
