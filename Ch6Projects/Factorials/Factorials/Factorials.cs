@@ -10,13 +10,13 @@ namespace Factorials
     {
         static void Main(string[] args)
         {
-            int total = 0;
+            int total = 1;
             for (int i = 1; i <= 5; i++)
             {
                 for (int n = 1; n <= i; n++)
-                    total += n;
+                    total *= n;
                 Console.WriteLine("{0}! = {1}", i, total);
-                total = 0;
+                total = 1;
             }
             Console.ReadKey();
             /*

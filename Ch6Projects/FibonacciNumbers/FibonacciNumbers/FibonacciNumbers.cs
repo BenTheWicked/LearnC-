@@ -21,7 +21,8 @@ namespace FibonacciNumbers
             input = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine();
-            for (int i = 0; i <= input; i+= num1 + num2)
+            Console.Write("{0} {1} ", num1, num2);
+            for (int i = 1; i <= input; i = num1 + num2)
             {
                 Console.Write("{0} ", i);
                 num1 = num2;

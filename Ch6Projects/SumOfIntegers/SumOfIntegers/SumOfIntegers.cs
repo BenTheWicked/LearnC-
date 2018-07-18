@@ -14,24 +14,17 @@ namespace SumOfIntegers
             int total = 0;              // add each number to total
 
             Console.WriteLine("Let's calculate the sum of odd numbers.");
-            Console.Write("To start, give me an odd number (q to quit): ");
+            Console.Write("To start, give me a number (q to quit): ");
             input = Console.ReadLine();
             while (!input.Equals("q"))
             {
                 int number = Convert.ToInt32(input);
-                if (number % 2 == 0)
-                {
-                    Console.Write("Please enter an odd number: ");
-                    input = Console.ReadLine();
-                    continue;
-                }
-
                 if (number > 0)
                 {
                     for (int i = 1; i <= number; i += 2)
                     {
                         total += i;
-                        if (i != number)
+                        if (i < number && i != (number - 1))
                             Console.Write("{0} + ", i);
                         else
                             Console.Write("{0} = ", i);
@@ -45,7 +38,7 @@ namespace SumOfIntegers
                     for (int i = -1; i>= number; i -= 2)
                     {
                         total += i;
-                        if (i != number)
+                        if (i > number && i != (number + 1))
                             Console.Write("{0} ", i);
                         else
                             Console.Write("{0} = ", i);
